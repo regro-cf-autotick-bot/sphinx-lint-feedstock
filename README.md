@@ -1,11 +1,11 @@
-About sphinx-lint
-=================
+About sphinx-lint-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-lint-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/sphinx-contrib/sphinx-lint
 
 Package license: PSF-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sphinx-lint-feedstock/blob/main/LICENSE.txt)
 
 Summary: Check for stylistic and formal issues in .rst and .py files included in the documentation.
 
