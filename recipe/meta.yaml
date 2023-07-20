@@ -1,5 +1,5 @@
 {% set name = "sphinx-lint" %}
-{% set version = "0.6.7" %}
+{% set version = "0.6.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/sphinx-lint-{{ version }}.tar.gz
-  sha256: 704a9bffd9117c77accf4a3c46f8ab3b4cb6ef51419b5d21a4386042f0616789
+  sha256: 8c51ab6f5a959362ddb40c5821206bb00987fe978caf46ef5362869022a4f1a2
 
 build:
   noarch: python
