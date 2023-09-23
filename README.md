@@ -9,6 +9,18 @@ Package license: PSF-2.0
 
 Summary: Check for stylistic and formal issues in .rst and .py files included in the documentation.
 
+Development: https://github.com/sphinx-contrib/sphinx-lint
+
+Documentation: https://github.com/sphinx-contrib/sphinx-lint/blob/main/README.md
+
+Sphinx Lint is based on rstlint.py from CPython.
+It should be reasonably fast so it's comfortable to use as a linter in your editor,
+be usable on a single file,
+not give any false positives (probably a utopia, but let's try),
+not spend too much effort finding errors that sphinx-build already finds (or can easily find),
+and focus on finding errors that are not visible to sphinx-build.
+
+
 Current build status
 ====================
 
