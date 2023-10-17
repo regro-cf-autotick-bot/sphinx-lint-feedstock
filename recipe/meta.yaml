@@ -22,6 +22,8 @@ build:
 requirements:
   host:
     - python >=3.8
+    - hatch-vcs
+    - hatchling
     - pip
   run:
     - python >=3.8
