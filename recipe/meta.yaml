@@ -34,6 +34,7 @@ test:
   commands:
     - pip check
     - {{ entrypoint }} --help
+    - {{ entrypoint }} --version
     - {{ entrypoint }} --list --verbose
   requires:
     - pip
