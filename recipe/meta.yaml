@@ -1,15 +1,15 @@
 {% set name = "sphinx-lint" %}
 {% set import = "sphinxlint" %}
 {% set entrypoint = "sphinx-lint" %}
-{% set version = "0.6.8" %}
-{% set sha256 = "8c51ab6f5a959362ddb40c5821206bb00987fe978caf46ef5362869022a4f1a2" %}
+{% set version = "0.7.0" %}
+{% set sha256 = "1d104940e252b472a77a3c8dcdca101c67a09612ff7679df9bc6aaca2f21fa66" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0]|lower }}/{{ name|lower }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
@@ -21,10 +21,12 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
+    - hatch-vcs
+    - hatchling
     - pip
   run:
-    - python >=3.7
+    - python >=3.8
     - polib
     - regex
 
@@ -34,6 +36,7 @@ test:
   commands:
     - pip check
     - {{ entrypoint }} --help
+    - {{ entrypoint }} --version
     - {{ entrypoint }} --list --verbose
   requires:
     - pip
