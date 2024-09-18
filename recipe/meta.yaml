@@ -1,8 +1,8 @@
 {% set name = "sphinx-lint" %}
 {% set import = "sphinxlint" %}
 {% set entrypoint = "sphinx-lint" %}
-{% set version = "0.9.1" %}
-{% set sha256 = "185cee19ff1129549c45e15a3b25404daeb47c54d15112dda589cedad82957aa" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "6eafdb44172ce526f405bf36c713eb246f1340ec2d667e7298e2487ed76decd2" %}
 
 package:
   name: {{ name|lower }}
